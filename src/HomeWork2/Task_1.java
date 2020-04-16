@@ -16,14 +16,12 @@ public class Task_1 {
     }
 
     public static double getDiagonal(double a, double b){
-        double diagonal;
-        diagonal = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
+        double diagonal = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
         return diagonal;
     }
 
     public static String checkFigures(double diagonal, double r){
-        double diameter;
-        diameter = r * 2;
+        double diameter = r * 2;
         String result = "";
         if (diagonal <= diameter){
             result = "The circle covers the rectangle.\n";

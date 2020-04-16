@@ -9,22 +9,15 @@ public class Task_3 {
 
     public static String[][] getArray(){
         Scanner in = new Scanner(System.in);
-
-        System.out.println("Введите size1:");
-        int size1 = in.nextInt();
-        while (size1 <= 0){
-            System.out.println("Неверное значение. Введите size1 еще раз:");
-            size1 = in.nextInt();
-        }
-
-        System.out.println("Введите size2:");
-        int size2 = in.nextInt();
-        while (size2 <= 0){
-            System.out.println("Неверное значение. Введите size2 еще раз:");
-            size2 = in.nextInt();
-        }
-
-        String[][] array = new String[size1][size2];
+        System.out.println("Введите количество строк:");
+        int rows = in.nextInt();
+        ArrayUtils checkSizeRows = new ArrayUtils();
+        rows = checkSizeRows.checkRowsSize(rows);
+        System.out.println("Введите количество столбцов:");
+        int columns = in.nextInt();
+        ArrayUtils checkSizeColumn = new ArrayUtils();
+        columns = checkSizeColumn.checkColumnssSize(columns);
+        String[][] array = new String[rows][columns];
         for (int i = 0; i < array.length; i++) {
             System.out.println();
             for(int j = 0; j < array[i].length; j++) {
