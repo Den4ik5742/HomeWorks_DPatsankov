@@ -1,6 +1,6 @@
 package HomeWork6.Task2;
 
-public class Peoples {
+public class Peoples implements Comparable{
     private String name;
     private String[] goods;
 
@@ -17,4 +17,8 @@ public class Peoples {
         return name;
     }
 
+    @Override
+    public int compareTo(Object o) {
+        return 0;
+    }
 }
