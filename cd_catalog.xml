@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <name>Hospital</name>
+    <otdel number = "1">
+        <employes>
+            <employee name = "Denis" surname = "Patsankov" position = "stomach" stage = "7"/>
+            <employee name = "Ivan" surname = "Ivanov" position = "xxxx" stage = "3"/>
+        </employes>
+    </otdel>
+    <otdel number = "2">
+        <employes>
+            <employee name = "Petr" surname = "Petrov" position = "yyyy" stage = "5"/>
+            <employee name = "Ivan" surname = "Ivanov" position = "zzzzz" stage = "8"/>
+        </employes>
+    </otdel>
+</company>
